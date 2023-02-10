@@ -4,4 +4,17 @@
 // 存取器、修饰符、抽象类、接口
 
 
-// es6语法
+// 实例化对象
+class Person{
+    public name:string
+    private age:number
+    constructor(name:string,age:number){
+        this.name=name;
+        this.age = age;
+    }
+    sayHi(name:string,age:number){
+        console.log("hi,我是"+name+','+age+'岁')
+    }
+}
+let p = new Person('刘某',18); // 执行类中的构造方法 constructor
+p.sayHi('李四',18);
